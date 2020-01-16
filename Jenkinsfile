@@ -1,7 +1,7 @@
 pipeline {
     agent {
         node {
-            label 'my-defined-label'
+            label 'Slave1'
             customWorkspace '/some/other/path'
         }
     }
