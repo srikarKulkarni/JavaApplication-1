@@ -2,7 +2,6 @@ pipeline {
     agent {
         node {
             label 'Slave1'
-            customWorkspace '/some/other/path'
         }
     }
     stages {
