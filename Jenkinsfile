@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'sudo cp ${env.BUILD_LOCATION} ${env.DEPLOYMENT_LOCATION}'
+                sudo cp ${env.BUILD_LOCATION} ${env.DEPLOYMENT_LOCATION}
             }
         }
     }
