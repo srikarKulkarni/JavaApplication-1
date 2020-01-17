@@ -8,12 +8,12 @@ pipeline {
        stage('Build') { 
             steps {
                 sh 'mvn -B -DskipTests clean package' 
-                echo "BUILD: ${env.BUILD_LOCATION}---------DEPLOY:${env.DEPLOYMENT_LOCATION}"
+                echo "BUILD: ${env.WORKSPACE}---------DEPLOY:${env.DEPLOYMENT_LOCATION}"
             }
         }
         stage('Deploy') {
             steps {
-                sh 'sudo cp "${env.BUILD_LOCATION}" "${env.DEPLOYMENT_LOCATION}"'
+                sh "sudo cp "${env.BUILD_LOCATION}" "${env.DEPLOYMENT_LOCATION}""
             }
         }
     }
