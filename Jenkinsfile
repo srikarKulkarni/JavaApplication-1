@@ -16,7 +16,7 @@ pipeline {
                 sh """
                     sudo cp "${env.BUILD_LOCATION}" "${env.DEPLOYMENT_LOCATION}"
                 """
-                emailext body: 'test', recipientProviders: [developers()], subject: 'test', to: 'shiva.siripurapu@ggktech.com'
+                email body: 'test', subject: 'test', to: 'shiva.siripurapu@ggktech.com'
             }
         }
     }
