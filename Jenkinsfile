@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'sudo cp /home/sainag/shiva/workspace/Test_master/target/example-1.0.war /opt/tomcat/webapps'
+                sh 'sudo cp ${env.BUILD_LOCATION} ${env.DEPLOYMENT_LOCATION}'
             }
         }
     }
