@@ -8,7 +8,7 @@ pipeline {
        stage('Build') { 
             steps {
                 sh 'mvn -B -DskipTests clean package' 
-                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+                echo "BUILD: ${env.BUILD_LOCATION}---------DEPLOY:${env.DEPLOYMENT_LOCATION}"
             }
         }
         stage('Deploy') {
