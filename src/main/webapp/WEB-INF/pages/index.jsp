@@ -6,7 +6,7 @@
 <link href="${resources}/css/core.css" rel="stylesheet">
 </head>
 <body>
-<h1>Ant + Spring MVC Web Project Example. new build</h1>
+<h1>Ant + Spring MVC Web Project Example. Pipeline</h1>
  
 <p>Message : ${message}</p>	
 </body>
