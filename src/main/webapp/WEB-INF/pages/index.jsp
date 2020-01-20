@@ -6,7 +6,7 @@
 <link href="${resources}/css/core.css" rel="stylesheet">
 </head>
 <body>
-<h1>Webhook test1</h1>
+<h1>CI - CD</h1>
  
 <p>Message : ${message}</p>	
 </body>
